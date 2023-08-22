@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../assets/logo/Logo1.png';
+import logo from '../../assets/logo/Logo1_white.png';
 import NavElement from "./NavElement";
 import styles from './navigation.module.css';
 

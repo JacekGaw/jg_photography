@@ -11,10 +11,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import styles from './home.module.css';
 
 const Home = () => {
     return (
-        <section>
+        <section className={styles.hero_container}>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -25,10 +26,17 @@ const Home = () => {
                 scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
+                className={styles.hero_container}
                 >
-                    <SwiperSlide><img src={heroImg1} alt='Fotografia Ślubna Jacek Gawlyta'/></SwiperSlide>
-                    <SwiperSlide><img src={heroImg2} alt='Fotografia Ślubna Jacek Gawlyta'/></SwiperSlide>
-                    <SwiperSlide><img src={heroImg3} alt='Fotografia Ślubna Jacek Gawlyta'/></SwiperSlide>
+                    <SwiperSlide className={styles.hero_slide}>
+                        <img src={heroImg1} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                    </SwiperSlide>
+                    <SwiperSlide className={styles.hero_slide}>
+                        <img src={heroImg2} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                    </SwiperSlide>
+                    <SwiperSlide className={styles.hero_slide}>
+                        <img src={heroImg3} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                    </SwiperSlide>
             </Swiper>
         </section>
     )
