@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navigation />
-      <div>
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/omnie" element={<About />} />
@@ -25,7 +25,8 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/fotografia-slubna" element={<WeddingPhoto />} />
         </Routes>
-      </div>
+      </main>
+      <footer>Footer</footer>
     </>
   );
 }
