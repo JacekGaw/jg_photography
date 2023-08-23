@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from '../../assets/logo/Logo1_white.png';
 import NavElement from "./NavElement";
 import styles from './navigation.module.css';
 
-const navigation = () => {
-
-    const handleScroll = e => {
-        console.log("ruszasz");
+const Navigation = () => {
+    const [isOnTop, setIsOnTop] = useState(true);
+    const handleScroll = () => {
+        if(window.scrollY <= 80){
+            setIsOnTop(true);
+        }
+        else if(window.scrollY > 80)
+            setIsOnTop(false);
     }
+    
+    window.addEventListener('scroll', handleScroll);
 
     return (
-        <nav className={styles.nav} onScroll={handleScroll}>
+        <nav className={isOnTop ? `${styles.nav}` : `${styles.nav} ${styles.nav_scroll}`} onScroll={handleScroll}>
             <ul className={styles.nav_container}>
                 <NavElement to="/omnie" className={styles.nav_element}>O mnie</NavElement>
                 <NavElement to="/oferta" className={styles.nav_element}>Oferta</NavElement>
@@ -26,4 +32,4 @@ const navigation = () => {
     )
 }
 
-export default navigation;
+export default Navigation;
