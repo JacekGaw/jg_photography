@@ -1,0 +1,52 @@
+.header_container {
+    position: absolute;
+    top: 0%;
+    width: 800px;
+    height: 100%;
+    left: 10%;
+    z-index: 100;
+    padding: 50px;
+    background-color: rgba(10,10,10,0.5);
+    box-shadow: 0px 0px 5px rgba(10,10,10,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+}
+.row_paragraph {
+    flex: 60%;
+    color: #eee;
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing: px;
+    line-height: 1.6rem;
+    padding: 30px 0;
+}
+.row_buttons {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+}
+.row_buttons button {
+    /* margin: 10px; */
+}
+.header_container h1 {
+    width: 100%;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(10,10,10);
+}

@@ -1,14 +1,16 @@
 .hero_container {
     height: 100vh;
+    position: relative;
 }
 
 .hero_slide {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
 }
 
 .hero_slide img {
+    object-fit: cover;
+    min-height: 100%;
     max-width: 100%;
-    object-position: bottom;
 }
