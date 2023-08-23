@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import HeaderSection from "./HeaderSection";
+import AboutSection from "./AboutSection";
 
 import heroImg1 from '../../assets/heroImg/DSC00024.jpg';
 import heroImg2 from '../../assets/heroImg/DSC02774.jpg';
@@ -17,6 +18,7 @@ import styles from './home.module.css';
 
 const Home = () => {
     return (
+        <>
         <section className={styles.hero_container}>
             <Swiper
                 // install Swiper modules
@@ -48,6 +50,8 @@ const Home = () => {
                     </SwiperSlide>
             </Swiper>
         </section>
+        <AboutSection />
+        </>
     )
 };
 

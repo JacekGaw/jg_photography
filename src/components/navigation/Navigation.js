@@ -4,8 +4,13 @@ import NavElement from "./NavElement";
 import styles from './navigation.module.css';
 
 const navigation = () => {
+
+    const handleScroll = e => {
+        console.log("ruszasz");
+    }
+
     return (
-        <nav className={styles.nav}>
+        <nav className={styles.nav} onScroll={handleScroll}>
             <ul className={styles.nav_container}>
                 <NavElement to="/omnie" className={styles.nav_element}>O mnie</NavElement>
                 <NavElement to="/oferta" className={styles.nav_element}>Oferta</NavElement>
