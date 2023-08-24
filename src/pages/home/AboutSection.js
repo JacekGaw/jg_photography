@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './AboutSection.module.css'
 import salaImg from '../../assets/homeImages/sala_weselna.jpg';
+import { Parallax } from "react-scroll-parallax";
 
 const AboutSection = () => {
     return (
@@ -32,6 +33,7 @@ const AboutSection = () => {
                         i unikalną pamiątkę! Zajrzyjcie do zakładki <a href="/fotografia-slubna">Fotografia Ślubna</a> gdzie przybliżam bardziej cały proces.
                     </p>
                 </div>
+
             </div>
         </section>
     );

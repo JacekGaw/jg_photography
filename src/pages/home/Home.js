@@ -4,6 +4,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import HeaderSection from "./HeaderSection";
 import AboutSection from "./AboutSection";
 
+import { Parallax } from "react-scroll-parallax";
+
 import heroImg1 from '../../assets/heroImg/DSC00024.jpg';
 import heroImg2 from '../../assets/heroImg/DSC02774.jpg';
 import heroImg3 from '../../assets/heroImg/DSC09691.jpg';
@@ -15,6 +17,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import styles from './home.module.css';
+import PortfolioSection from "./PortfolioSection";
 
 const Home = () => {
     return (
@@ -34,23 +37,34 @@ const Home = () => {
                 >
                     <HeaderSection />
                     <SwiperSlide className={styles.hero_slide}>
-                        <img src={heroImg1} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        <Parallax translateY={[-20,20]}>
+                            <img src={heroImg1} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        </Parallax>
                     </SwiperSlide>
                     <SwiperSlide className={styles.hero_slide}>
-                        <img src={heroImg2} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        <Parallax translateY={[-20,20]}>
+                            <img src={heroImg2} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        </Parallax>
                     </SwiperSlide>
                     <SwiperSlide className={styles.hero_slide}>
-                        <img src={heroImg3} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        <Parallax translateY={[-20,20]}>
+                            <img src={heroImg3} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        </Parallax>
                     </SwiperSlide>
                     <SwiperSlide className={styles.hero_slide}>
-                        <img src={heroImg4} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        <Parallax translateY={[-20,20]}>
+                            <img src={heroImg4} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        </Parallax>
                     </SwiperSlide>
                     <SwiperSlide className={styles.hero_slide}>
-                        <img src={heroImg5} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        <Parallax translateY={[-20,20]}>
+                            <img src={heroImg5} alt='Fotografia Ślubna Jacek Gawlyta'/>
+                        </Parallax>
                     </SwiperSlide>
             </Swiper>
         </section>
         <AboutSection />
+        <PortfolioSection />
         </>
     )
 };
