@@ -5,7 +5,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 7px;
     flex-basis: 30%;
 }
 .img_row {

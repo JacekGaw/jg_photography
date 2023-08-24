@@ -13,12 +13,14 @@ const PortfolioSection = () => {
     return (
         <section className={styles.container}>
             <PortfolioSectionImg />
-            <header className={styles.header_container}>
-                <h2 className={styles.header_h2}>Portfolio</h2>
-                <p className={styles.header_p}>Zebrałem swoje ulubione kadry w jedno miejsce, abyście mogli zapoznać się z moim stylem i typem fotografii. 
-                    Przekonajcie się, że jestem fotografem idealnym dla Was!
-                </p>
-                <Button className={styles.creme} onClick={handleToPortfolio}>Portoflio</Button>
+            <header className={styles.header_fill}>
+                <div className={styles.header_container}>
+                    <h2 className={styles.header_h2}>Portfolio</h2>
+                    <p className={styles.header_p}>Zebrałem swoje ulubione kadry w jedno miejsce, abyście mogli zapoznać się z moim stylem i typem fotografii. 
+                        Przekonajcie się, że jestem fotografem idealnym dla Was!
+                    </p>
+                    <Button className='creme-transparent' onClick={handleToPortfolio}>Portoflio</Button>
+                </div>
             </header>
         </section>
     );

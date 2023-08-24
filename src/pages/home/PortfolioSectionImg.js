@@ -31,7 +31,7 @@ const PortfolioSectionImg = () => {
                     </Parallax>
                 }
                 {screenWidth > 1000 &&
-                    <Parallax translateY={[20,-20]}>
+                    <Parallax translateY={[-30,30]}>
                         <div className={styles.img_row}>
                             <img src={photo2}/>
                             <img src={photo1}/>
@@ -50,7 +50,7 @@ const PortfolioSectionImg = () => {
                         </div>
                     </Parallax>
                 }
-                <Parallax translateY={[20,-20]}>
+                <Parallax translateY={[-30,30]}>
                     <div className={styles.img_row}>
                         <img src={photo2}/>
                         <img src={photo1}/>
