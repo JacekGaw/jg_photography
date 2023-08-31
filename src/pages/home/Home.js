@@ -3,6 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import HeaderSection from "./HeaderSection";
 import AboutSection from "./AboutSection";
+import styles from './home.module.css';
+import PortfolioSection from "./PortfolioSection";
+import CustomersOp from "./CustomersOp";
 
 import { Parallax } from "react-scroll-parallax";
 
@@ -16,8 +19,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import styles from './home.module.css';
-import PortfolioSection from "./PortfolioSection";
+
 
 const Home = () => {
     return (
@@ -65,6 +67,7 @@ const Home = () => {
         </section>
         <AboutSection />
         <PortfolioSection />
+        <CustomersOp />
         </>
     )
 };

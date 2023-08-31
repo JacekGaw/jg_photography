@@ -1,0 +1,58 @@
+.container {
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+    background-color: var(--theme-color-cream-light);
+}
+
+.header {
+    width: 100%;
+}
+.header h4 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.swiper_container {
+    width: 100%;
+}
+.slide {
+    width: 100%;
+    height: 50vh;
+    background-image: url('../../assets/avatarImg/DSC02761.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.slide_container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30%;
+}
+.item_header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.item_header h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+}
+.item_text {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.button_container {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+
+
+
